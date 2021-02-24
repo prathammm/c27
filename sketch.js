@@ -33,9 +33,9 @@ function setup(){
     box5 = new Box(810,160,70,70);
     log4 = new Log(760,120,150, PI/7);
     log5 = new Log(870,120,150, -PI/7);
-
+    log6 = new Log(100,100,20,PI/2)
     bird = new Bird(100,100);
-
+    slingshot1 = new slingshot(bird.body,log6.body)
 }
 
 function draw(){
@@ -44,21 +44,24 @@ function draw(){
     console.log(box2.body.position.x);
     console.log(box2.body.position.y);
     console.log(box2.body.angle);
-    box1.display();
-    box2.display();
-    ground.display();
-    pig1.display();
-    log1.display();
+     box1.display();
+        box2.display();
+             ground.display();
+                  pig1.display();
+                        log1.display();
 
-    box3.display();
-    box4.display();
-    pig3.display();
-    log3.display();
+        box3.display();
+            box4.display();
+                pig3.display();
+                   log3.display();
 
-    box5.display();
-    log4.display();
-    log5.display();
+                    box5.display();
+                log4.display();
+            log5.display();
+    log6.display();
 
     bird.display();
-    platform.display();
+        platform.display();
+            slingshot1.display();
 }
+
